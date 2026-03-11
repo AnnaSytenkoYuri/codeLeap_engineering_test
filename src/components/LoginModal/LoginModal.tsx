@@ -2,20 +2,20 @@ import { useState } from "react";
 import css from './LoginModal.module.css';
 
 interface LoginModalProps {
-    onEnter: (userName: string) => void
+    onEnter: (username: string) => void
 }
 
 export default function LoginModal({onEnter}: LoginModalProps) {
 
-    const [userName, setUserName] = useState<string>('');
+    const [username, setUsername] = useState<string>('');
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setUserName(event.target.value);
+        setUsername(event.target.value);
     }
 
     const handleEnter = () => {
-        if (!userName.trim()) return;
-        onEnter(userName);
+        if (!username.trim()) return;
+        onEnter(username);
       };
 
 
@@ -27,12 +27,12 @@ export default function LoginModal({onEnter}: LoginModalProps) {
                 <input 
                 type="text" 
                 placeholder="John Doe"
-                value={userName}
+                value={username}
                 onChange={handleInputChange}
                 className={css.input}
                 />
                 <button 
-                disabled={!userName.trim()}
+                disabled={!username.trim()}
                 onClick={handleEnter}
                 className={css.enterBtn}
                 >ENTER</button>

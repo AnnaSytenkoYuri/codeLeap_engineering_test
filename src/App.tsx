@@ -1,17 +1,16 @@
 import { useState } from 'react'
 import './App.css'
-import LoginModal from './components/LoginModal'
+import LoginModal from './components/LoginModal/LoginModal'
+import MainPage from './pages/MainPage';
 
 function App() {
-  const [userName, setUserName] = useState<string | null>(null)
+  const [username, setUsername] = useState<string | null>(null)
 
-  if (!userName) {
-   return <LoginModal onEnter={setUserName} />;
+  if (!username) {
+   return <LoginModal onEnter={setUsername} />;
   }
   return (
-    <div className="App">
-      <h1>Welcome, {userName}!</h1>
-    </div>
+    <MainPage username={username} />
   )
 }
 

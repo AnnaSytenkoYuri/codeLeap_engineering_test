@@ -19,20 +19,19 @@
   background-color: #fff;
 }
 .modalTitle {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 22px;
   color: #000;
   margin-bottom: 24px;
 }
 .text {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 16px;
   color: #000;
   margin-bottom: 8px;
 }
 .input {
+  border: 1px solid #777;
+  border-radius: 8px;
   width: 452px;
   height: 32px;
   margin-bottom: 16px;
@@ -40,6 +39,7 @@
   font-weight: 400;
   font-size: 14px;
   color: #000;
+  padding-left: 11.2px;
 }
 
 .input::placeholder {
@@ -59,4 +59,10 @@
   align-items: center;
   border: none;
   cursor: pointer;
+}
+
+.enterBtn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
 }

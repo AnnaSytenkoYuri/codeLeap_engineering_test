@@ -1,0 +1,62 @@
+.card {
+  border: 1px solid #999;
+  border-radius: 16px;
+  width: 752px;
+  height: 316px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.cardHeader {
+  background: #7695ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-radius: 16px 16px 0 0;
+  width: 752px;
+  height: 70px;
+}
+
+.cardTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 0 24px;
+}
+
+.username {
+  font-weight: 700;
+  color: #777;
+}
+
+.time {
+  color: #999;
+  font-size: 14px;
+}
+
+.content {
+  padding: 16px 24px 24px 24px;
+
+  line-height: 1.5;
+  color: #000;
+}
