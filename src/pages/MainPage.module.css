@@ -1,21 +1,18 @@
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #dddddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
+  position: fixed;
+  inset: 0;
+  background-color: #ddd;
+  overflow-y: auto;
   }
 
 .container {
+  width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 40px auto;
   background-color: #fff;
+  
 }
 
 .titleHeader {
