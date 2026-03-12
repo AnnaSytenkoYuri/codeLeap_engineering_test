@@ -18,3 +18,16 @@ export async function getPost() {
 export async function createPost(post: CreatePostTDO) {
   await api.post("", post);
 }
+
+
+export async function deletePost(id: number) {
+  await api.delete(`${id}/`);
+}
+
+export async function updatePost(id: number, title: string, content: string) {
+  await api.patch(`${id}/`, {
+    title,
+    content,
+  });
+}
+

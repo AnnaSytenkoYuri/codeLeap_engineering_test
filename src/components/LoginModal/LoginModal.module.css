@@ -61,6 +61,11 @@
   cursor: pointer;
 }
 
+.enterBtn:hover {
+  background-color: #2e5dd2;
+  transition: background-color 0.3s ease;
+}
+
 .enterBtn:disabled {
   background-color: #cccccc;
   cursor: not-allowed;

@@ -67,6 +67,11 @@
   color: #fff;
   cursor: pointer;
 }
+
+.createBtn:hover {
+  background-color: #2e5dd2;
+  transition: background-color 0.3s ease;
+}
 .buttonRow {
   display: flex;
   justify-content: flex-end;
