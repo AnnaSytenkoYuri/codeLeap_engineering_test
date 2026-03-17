@@ -42,6 +42,7 @@ export default function MainPage({ username }: MainPageProps) {
     await updatePost(editedPostId, title, content);
     await fetchPost();
     setEditedPostId(null);
+    setDeletedPostId(null);
   };
 
   const fetchPost = async () => {
@@ -97,7 +98,7 @@ export default function MainPage({ username }: MainPageProps) {
         {editedPostId && (
           <EditModal
             post={posts.find((post) => post.id === editedPostId) as Post}
-            onCancel={() => setEditedPostId(null)}
+            onCancel={() => {setEditedPostId(null); setDeletedPostId(null)}}
             onSave={handleSaveEdit}
           />
         )}
